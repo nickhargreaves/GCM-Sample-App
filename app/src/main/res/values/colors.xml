@@ -2,4 +2,5 @@
 <resources>
 <color name="background_grey">#e9eff3</color>
 <color name="color_primary">#00a958</color>
+<color name="alert_green">#00a958</color>
 </resources>

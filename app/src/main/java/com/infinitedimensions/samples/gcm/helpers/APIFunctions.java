@@ -7,16 +7,14 @@ import java.util.List;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.WordPress;
 
 import android.util.Log;
 
 public class APIFunctions {
 
     private JSONParser jsonParser;
-    private static String updateDeviceURL = BuildConfig.API_URL + "/users/edit_user_device/";
-    private static String sendMessageUrl = BuildConfig.API_URL + "/users/send_message/";
+    private static String updateDeviceURL ="/users/edit_user_device/";
+    private static String sendMessageUrl = "/users/send_message/";
 
     // constructor
     public APIFunctions(){

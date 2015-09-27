@@ -7,9 +7,6 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.codeforafrica.citizenreporter.starreports.WordPress;
-import org.codeforafrica.citizenreporter.starreports.ui.accounts.helpers.APIFunctions;
-
 
 public class SendMessage extends AsyncTask<Void, Void, String> {
 
@@ -28,11 +25,11 @@ public class SendMessage extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... arg0) {
         APIFunctions userFunction = new APIFunctions();
-        String username = WordPress.getCurrentBlog().getUsername();
 
-        JSONObject json = userFunction.sendMessage(username, message);
+        JSONObject json = userFunction.sendMessage("username", message);
 
         String result="";
+
         if(json!=null){
             try {
                 result  = json.getString("result");

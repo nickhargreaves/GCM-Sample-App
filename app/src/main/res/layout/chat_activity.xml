@@ -25,34 +25,23 @@
         android:layout_below="@+id/toolbar"
         android:background="@color/background_grey"
         android:gravity="center"
-        android:orientation="vertical">
-
+        android:orientation="vertical">>
         <ImageView
             android:id="@+id/empty_tags_box_top"
-            android:layout_width="112dp"
-            android:layout_height="86dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/penandink" />
+            android:src="@drawable/penandink"
+            android:layout_gravity="center_horizontal" />
 
-        <org.wordpress.android.widgets.WPTextView
-            android:id="@+id/title_empty"
-            style="@style/WordPress.EmptyList.Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/empty_list_title_bottom_margin"
-            android:layout_marginLeft="@dimen/empty_list_title_side_margin"
-            android:layout_marginRight="@dimen/empty_list_title_side_margin"
-            android:text="@string/empty_chat_list"/>
-
-        <org.wordpress.android.widgets.WPTextView
-            android:id="@+id/description_empty"
-            style="@style/WordPress.EmptyList.Description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/empty_list_description_bottom_margin"
-            android:layout_marginLeft="@dimen/empty_list_description_side_margin"
-            android:layout_marginRight="@dimen/empty_list_description_side_margin" />
+        <TextView
+                android:id="@+id/title_empty"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Start chatting"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/form"
         android:layout_width="fill_parent"

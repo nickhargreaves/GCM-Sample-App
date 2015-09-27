@@ -10,7 +10,7 @@
         android:layout_height="25dp"
         android:id="@+id/roundendImageView"
         android:layout_margin="12dp"
-        android:src="@drawable/app_icon"/>
+        android:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:layout_width="fill_parent"

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.infinitedimensions.samples.gcm"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.google.android.gms:play-services:7.8.0'
     compile files('/home/nick/dev/code/GCM-Sample-App/libs/gcm.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }

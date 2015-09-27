@@ -26,7 +26,6 @@ import com.infinitedimensions.samples.gcm.helpers.SendMessage;
 import com.infinitedimensions.samples.gcm.models.Message;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChatActivity extends AppCompatActivity {
@@ -48,7 +47,7 @@ public class ChatActivity extends AppCompatActivity {
     private ImageView buttonSend;
     private ChatArrayAdapter adClass;
     private String friend_id;
-    private WordPressDB db;
+    private DBHandler db;
     LinearLayout emptyView;
 
     @Override
@@ -66,7 +65,7 @@ public class ChatActivity extends AppCompatActivity {
         chatText = (EditText)findViewById(R.id.chatText);
         buttonSend = (ImageView)findViewById(R.id.buttonSend);
 
-        db = WordPress.wpDB;
+        db = new DBHandler(this);;
 
         messagesList = db.getMessages();
         if(messagesList.size()>0){
