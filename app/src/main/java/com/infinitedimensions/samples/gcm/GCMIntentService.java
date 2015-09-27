@@ -11,15 +11,6 @@ import android.util.Log;
 
 import com.google.android.gcm.GCMBaseIntentService;
 
-import org.codeforafrica.citizenreporter.starreports.BuildConfig;
-import org.codeforafrica.citizenreporter.starreports.R;
-import org.codeforafrica.citizenreporter.starreports.chat.ChatActivity;
-import org.codeforafrica.citizenreporter.starreports.chat.Message;
-import org.codeforafrica.citizenreporter.starreports.ui.comments.CommentsActivity;
-import org.codeforafrica.citizenreporter.starreports.ui.posts.StoryBoard;
-import org.wordpress.android.util.DeviceUtils;
-import org.codeforafrica.citizenreporter.starreports.wallet.Payment;
-import org.codeforafrica.citizenreporter.starreports.wallet.PaymentsListActivity;
 
 import java.io.IOException;
 import java.io.InputStream;

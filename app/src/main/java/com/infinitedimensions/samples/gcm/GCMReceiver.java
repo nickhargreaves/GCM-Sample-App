@@ -19,6 +19,6 @@ import com.google.android.gcm.GCMBroadcastReceiver;
 public class GCMReceiver extends GCMBroadcastReceiver {
     @Override
     protected String getGCMIntentServiceClassName(Context context) {
-        return "org.codeforafrica.citizenreporter.starreports.GCMIntentService";
+        return "com.infinitedimensions.samples.gcm.GCMIntentService";
     }
 }

@@ -25,19 +25,13 @@ import com.infinitedimensions.samples.gcm.helpers.GifAnimationDrawable;
 import com.infinitedimensions.samples.gcm.helpers.SendMessage;
 import com.infinitedimensions.samples.gcm.models.Message;
 
-import org.codeforafrica.citizenreporter.starreports.R;
-import org.codeforafrica.citizenreporter.starreports.WordPress;
-import org.codeforafrica.citizenreporter.starreports.WordPressDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import it.gmariotti.cardslib.library.internal.Card;
-import it.gmariotti.cardslib.library.internal.CardGridArrayAdapter;
 public class ChatActivity extends AppCompatActivity {
     ListView gridView;
-    private ArrayList<Card> cards;
-    CardGridArrayAdapter mCardArrayAdapter;
+
     List<Message> messagesList;
 
     private GifAnimationDrawable little;
